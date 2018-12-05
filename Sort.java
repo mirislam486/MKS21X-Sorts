@@ -1,10 +1,13 @@
-public class Sort{ //This entire thing is probably way more complicated than it should be
+public class Sort{ 
 
   public static void selectionsort(int[] ary){
     int[] output = new int[ary.length];
     for(int idx = 0; idx < ary.length; i++){
-
+      int minimum = ary.findMin(ary);
+      output[i] = minimum;
+      ary = ArrayUtils.removeElement(ary, minimum);
     }
+    return ary;
   }
 
   public static int findMin(int[] ary){ //Helper function to find the minimum
