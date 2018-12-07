@@ -15,4 +15,10 @@ public class Sorts{
     }
     System.out.println(ary);
   }
+  public static void bubbleSort(int[] data){
+    boolean swapped = false;
+    for(int i = 0; i < data.length; i++){
+      for(int k = i + 1; )
+    }
+  }
 }
