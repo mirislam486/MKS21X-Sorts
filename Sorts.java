@@ -15,10 +15,20 @@ public class Sorts{
     }
     System.out.println(ary);
   }
+
+
   public static void bubbleSort(int[] data){
     boolean swapped = false;
     for(int i = 0; i < data.length; i++){
-      for(int k = i + 1; )
+      for(int k = i + 1; k < data.length; k++){
+        if(data[i] > data[k]){
+          int temp = data[i];
+          data[i] = data[k];
+          data[k] = data[i]
+          swapped = true;
+        }
+      }
     }
+    System.out.println(ary);
   }
 }
